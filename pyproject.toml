@@ -1,0 +1,17 @@
+[project]
+name = "dbt-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dbt-core>=1.12.7",
+    "dbt-databricks>=1.10.9",
+]
+
+[project.scripts]
+dbt-project = "dbt_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
