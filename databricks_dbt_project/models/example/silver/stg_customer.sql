@@ -6,5 +6,3 @@ SELECT
     city AS city
 
 FROM {{ source('customer_order_summary', 'customers') }}
-
-WHERE customer_id IS NOT NULL
